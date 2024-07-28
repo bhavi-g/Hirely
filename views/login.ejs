@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
+  <title>Galileo Design</title>
+  <link rel="icon" href="./logo.png" type="image/icon type">
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body>
+  <div class="relative flex size-full min-h-screen flex-col bg-[#f8fafb] group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
+      <%- include('../partials/nav') %>
+      <div class="px-40 flex flex-1 justify-center py-5" style="margin-top: 5rem;">
+        <div class="layout-content-container flex flex-col w-[512px] max-w-[512px] py-5 max-w-[960px] flex-1">
+          <form action="login" method="post">
+            <h2 class="text-[#0e161b] tracking-light text-[28px] font-bold leading-tight px-4 text-left pb-3 pt-5">Welcome back to Hirely</h2>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#0e161b] text-base font-medium leading-normal pb-2">Username</p>
+                <input
+                  placeholder=""
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0e161b] focus:outline-0 focus:ring-0 border border-[#d1dde6] bg-[#f8fafb] focus:border-[#d1dde6] h-14 placeholder:text-[#507a95] p-[15px] text-base font-normal leading-normal"
+                  value=""
+                  name="username"
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#0e161b] text-base font-medium leading-normal pb-2">Password</p>
+                <input
+                  type="password"
+                  placeholder="••••••••"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0e161b] focus:outline-0 focus:ring-0 border border-[#d1dde6] bg-[#f8fafb] focus:border-[#d1dde6] h-14 placeholder:text-[#507a95] p-[15px] text-base font-normal leading-normal"
+                  value=""
+                  name="password"
+                />
+              </label>
+            </div>
+            <div class="flex px-4 py-3">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 flex-1 bg-[#2c99e2] text-[#f8fafb] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Sign in</span>
+              </button>
+            </div>
+          </form>
+          <p class="text-[#507a95] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center underline" style="margin-left: -30rem;"><a href="signup">New to Hirely? Sign up</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

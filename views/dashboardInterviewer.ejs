@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <link rel="icon" href="./logo.png" type="image/icon type">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#f8fafb] group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <div class="header" style="margin-bottom: 4rem;">
+            <%- include('../partials/nav') %>
+        </div>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex p-4 @container">
+              <div class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:justify-between @[520px]:items-center">
+                <div class="flex gap-4">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
+                    style='background-image: url("naael.jpeg");'
+                  ></div>
+                  <div class="flex flex-col justify-center">
+                    <p class="text-[#0e161b] text-[22px] font-bold leading-tight tracking-[-0.015em]">Naael Ahmed</p>
+                    <p class="text-[#507a95] text-base font-normal leading-normal">5.0 (100) | @mnahmed | @Google</p>
+                    <p class="text-[#507a95] text-base font-normal leading-normal">Product Designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#0e161b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About Me</h2>
+            <p class="text-[#0e161b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              I'm a product designer with a keen eye for detail and a passion for creating user experiences that are both beautiful and functional. I have a background in graphic
+              design and am proficient in Adobe Creative Suite, Sketch, and InVision. I'm also experienced in HTML, CSS, and JavaScript and can create responsive designs that look
+              great on all devices. My design process is iterative and user-focused, and I'm always looking for ways to improve and learn new skills. I'm currently working at
+              Google, where I design products for a variety of platforms, including web, mobile, and VR. I'm passionate about creating products that make people's lives easier and
+              more enjoyable, and I'm always looking for new opportunities to do so.
+            </p>
+            <h2 class="text-[#0e161b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Resume</h2>
+            <div class="p-4 @container">
+                <div class="flex flex-1 flex-col items-start justify-between gap-4 rounded-xl border border-[#d1dde6] bg-[#f8fafb] p-5 @[480px]:flex-row @[480px]:items-center">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[#0e161b] text-base font-bold leading-tight">Download Resume</p>
+                    <p class="text-[#507a95] text-base font-normal leading-normal">PDF • 2 pages</p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#2c99e2] text-[#f8fafb] text-sm font-medium leading-normal"
+                  >
+                    <span class="truncate">Download</span>
+                  </button>
+                </div>
+              </div>
+              <div class="flex w-full grow bg-[#f8fafb] @container p-4">
+                <div class="w-full gap-1 overflow-hidden bg-[#f8fafb] @[480px]:gap-2 aspect-[3/2] rounded-xl flex" style="height: 1200px; width: 1800px;">
+                  <div
+                    class="w-full bg-center bg-no-repeat bg-cover aspect-auto flex-1"
+                    style='background-image: url("resume.jpg");'
+                  ></div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

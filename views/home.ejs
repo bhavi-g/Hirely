@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" />
+    <title>Hirely</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="icon" href="./logo.png" type="image/icon type">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        #hirely {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="relative flex min-h-screen flex-col bg-[#f8fafb] group/design-root overflow-x-hidden"
+        style='font-family: Manrope, "Noto Sans", sans-serif;'>
+        <div class="layout-container flex h-full grow flex-col">
+            <%- include('../partials/nav') %>
+            <div class="flex flex-1 justify-center py-5 pt-24 px-4">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                    <div class="flex min-h-[400px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                        style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://cdn.usegalileo.ai/sdxl10/b40612b2-fdf3-45f4-8439-23db5a09041a.png");'>
+                        <div class="flex flex-col gap-2 text-left">
+                            <h1
+                                class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                The best interviewers, on demand
+                            </h1>
+                            <h2
+                                class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                                Get expert interviewers to help you build a better team
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-10 px-4 py-10 @container">
+                        <div class="flex flex-col gap-6">
+                            <div class="flex flex-col gap-4">
+                                <h1
+                                    class="text-[#0e161b] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                                    Why Hirely?
+                                </h1>
+                                <p class="text-[#0e161b] text-base font-normal leading-normal max-w-[720px]">
+                                    With Hirely, you can trust that you're getting the best interviewers for your needs.
+                                    Whether you need help with technical interviews, behavioral interviews, or anything in
+                                    between, we have experts who can help. Our interviewers are vetted for both expertise and
+                                    professionalism, so you can feel confident in the quality of their feedback.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Hestia's Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <link rel="icon" href="./logo.png" type="image/icon type">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#f8fafb] group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <div class="header" style="margin-bottom: 4rem;">
+        <%- include('../partials/nav') %>
+    </div>
+        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col w-80" style="margin-right: 3rem;">
+            <div class="flex p-4 @container">
+              <div class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:justify-between">
+                <div class="flex gap-4">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-xl min-h-32 w-32"
+                    style='margin-left: 5rem; background-image: url("https://cdn.usegalileo.ai/sdxl10/3e3a621d-7abe-459c-96d4-f8e596695c00.png");'
+                  ></div>
+                 
+                </div>
+              </div>
+            </div>
+            <div class="pb-3">
+              <div class="flex border-b border-[#d1dde6] px-4 justify-between">
+                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#507a95] pb-[13px] pt-4 flex-1" href="#">
+                  <p class="text-[#507a95] text-sm font-bold leading-normal tracking-[0.015em]">Description</p>
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-col px-4 py-6">
+              <div class="flex flex-col items-center gap-6">
+                <div class="flex max-w-[480px] flex-col items-center gap-2">
+                  <p class="text-[#0e161b] text-lg font-bold leading-tight tracking-[-0.015em] max-w-[480px] text-center">Hestia is an innovative housing platform designed specifically for students. This platform caters to the dynamic lifestyle of students who may need temporary housing for internships, exchange programs, or short-term studies.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex px-4 py-3">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 flex-1 bg-[#e8eef3] text-[#0e161b] gap-2 pl-4 text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <div class="text-[#0e161b]" data-icon="Plus" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+                  </svg>
+                </div>
+                <span class="truncate"><a href="newInterview">Arrange a new interview</a></span>
+              </button>
+            </div>
+          </div>
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#0e161b] tracking-light text-[32px] font-bold leading-tight min-w-72">Hestia</p></div>
+            <h3 style="margin-bottom: 2rem;" class="text-[#0e161b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Active interviews</h3>
+            <div class="flex overflow-hidden rounded-xl border border-[#d1dde6] bg-[#f8fafb]">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-[#f8fafb]">
+                      <th class="table-2806b086-1fb1-4bbb-96f7-c1a6e598f7a5-column-120 px-4 py-3 text-left text-[#0e161b] w-[400px] text-sm font-medium leading-normal">
+                        Candidate
+                      </th>
+                      <th class="table-2806b086-1fb1-4bbb-96f7-c1a6e598f7a5-column-240 px-4 py-3 text-left text-[#0e161b] w-[400px] text-sm font-medium leading-normal">
+                        Position
+                      </th>
+                      <th class="table-2806b086-1fb1-4bbb-96f7-c1a6e598f7a5-column-360 px-4 py-3 text-left text-[#0e161b] w-[400px] text-sm font-medium leading-normal">
+                        Last Update
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#d1dde6]">
+                      <td class="table-2806b086-1fb1-4bbb-96f7-c1a6e598f7a5-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0e161b] text-sm font-normal leading-normal">
+                        Jane Smith
+                      </td>
+                      <td class="table-2806b086-1fb1-4bbb-96f7-c1a6e598f7a5-column-240 h-[72px] px-4 py-2 w-[400px] text-[#507a95] text-sm font-normal leading-normal">
+                        Senior Product Designer
+                      </td>
+                      <td class="table-2806b086-1fb1-4bbb-96f7-c1a6e598f7a5-column-360 h-[72px] px-4 py-2 w-[400px] text-[#507a95] text-sm font-normal leading-normal">
+                        1 day ago
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#d1dde6]">
+                      <td class="table-2806b086-1fb1-4bbb-96f7-c1a6e598f7a5-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0e161b] text-sm font-normal leading-normal">John Doe</td>
+                      <td class="table-2806b086-1fb1-4bbb-96f7-c1a6e598f7a5-column-240 h-[72px] px-4 py-2 w-[400px] text-[#507a95] text-sm font-normal leading-normal">
+                        Senior Product Manager
+                      </td>
+                      <td class="table-2806b086-1fb1-4bbb-96f7-c1a6e598f7a5-column-360 h-[72px] px-4 py-2 w-[400px] text-[#507a95] text-sm font-normal leading-normal">
+                        2 days ago
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#d1dde6]">
+                      <td class="table-2806b086-1fb1-4bbb-96f7-c1a6e598f7a5-column-120 h-[72px] px-4 py-2 w-[400px] text-[#0e161b] text-sm font-normal leading-normal">
+                        Anne Johnson
+                      </td>
+                      <td class="table-2806b086-1fb1-4bbb-96f7-c1a6e598f7a5-column-240 h-[72px] px-4 py-2 w-[400px] text-[#507a95] text-sm font-normal leading-normal">
+                        Senior Software Engineer
+                      </td>
+                      <td class="table-2806b086-1fb1-4bbb-96f7-c1a6e598f7a5-column-360 h-[72px] px-4 py-2 w-[400px] text-[#507a95] text-sm font-normal leading-normal">
+                        3 days ago
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

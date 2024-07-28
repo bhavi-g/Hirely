@@ -1,0 +1,36 @@
+<header
+                class="flex items-center justify-between whitespace-nowrap bg-white px-10 py-3 fixed w-full z-10">
+                <div class="flex items-center gap-4 text-[#0e161b]">
+                    
+                    <h2 class="text-[#0e161b] text-lg font-bold leading-tight tracking-[-0.015em]" id="hirley"><a href="/">Hirely</a></h2>
+                </div>
+                <div class="flex flex-1 justify-end gap-8">
+                    <div class="flex gap-2">
+                        <% if (!currentUser) { %>
+                            <form action="signup" method="get">
+                                <button
+                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#2c99e2] text-[#f8fafb] text-sm font-bold leading-normal tracking-[0.015em]">
+                                    <span class="truncate">Sign up</span>
+                                </button>
+                            </form>
+                            <form action="login" method="get">
+                                <button
+                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#e8eef3] text-[#0e161b] text-sm font-bold leading-normal tracking-[0.015em]">
+                                    <span class="truncate">Log in</span>
+                                </button>
+                            </form>
+                            <% } else { %>
+                                    <button
+                                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#2c99e2] text-[#f8fafb] text-sm font-bold leading-normal tracking-[0.015em]">
+                                        <span class="truncate"><a href="dashboard"><%= currentUser.username %></a></span>
+                                    </button>
+                                <form action="logout" method="get">
+                                    <button
+                                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#e8eef3] text-[#0e161b] text-sm font-bold leading-normal tracking-[0.015em]">
+                                        <span class="truncate">Log Out</span>
+                                    </button>
+                                </form>
+                                <% } %>
+                    </div>
+                </div>
+            </header>
